@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://krushnadandge.vercel.app/sitemap.xml 
+Sitemap: https://krushnapersonalportfolio.vercel.app/sitemap.xml 
