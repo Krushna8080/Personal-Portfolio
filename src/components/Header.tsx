@@ -133,7 +133,7 @@ const Header: React.FC = () => {
                 </motion.a>
 
                 <motion.a
-                  href="/resume.pdf"
+                  href="/Resumeeee.pdf"
                   download
                   className="px-6 py-3 rounded-xl bg-white/90 backdrop-blur-sm text-[#4A3A85] font-medium border border-[#4A3A85]/20 hover:border-[#4A3A85]/30 transition-all hover:shadow-lg hover:bg-[#4A3A85]/5 flex items-center gap-2"
                   whileHover={{ scale: 1.02 }}
