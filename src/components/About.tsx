@@ -52,7 +52,7 @@ const About: React.FC = () => {
                 {/* Image container */}
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 p-2">
                   <img
-                    src="/public/projects/link.jpg"
+                    src="/projects/link.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover rounded-xl"
                   />
