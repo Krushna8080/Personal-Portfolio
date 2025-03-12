@@ -1,31 +1,31 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Krushna Dandge - Full Stack Developer & AI/ML Enthusiast',
-  description: 'Portfolio of Krushna Dandge - Full Stack Developer specializing in Web Development, AI/ML and Finance. View my projects, skills, and experience in web development and artificial intelligence.',
-  keywords: ['Krushna Dandge', 'Krushna Portfolio', 'Full Stack Developer', 'AI ML Developer', 'React Developer', 'Node.js Developer', 'Web Developer'],
+  title: 'Krushna Portfolio | Full Stack Developer & AI/ML Enthusiast',
+  description: 'Krushna Portfolio - Full Stack Developer from India specializing in Web Development, AI/ML and Finance. View my projects, skills, and experience in web development and artificial intelligence.',
+  keywords: ['Krushna Portfolio', 'Krushna Dandge', 'Portfolio', 'Indian Developer', 'Full Stack Developer', 'AI ML Developer', 'React Developer', 'Node.js Developer', 'Web Developer', 'Developer from India'],
   authors: [{ name: 'Krushna Dandge' }],
   creator: 'Krushna Dandge',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     url: 'https://krushnapersonalportfolio.vercel.app',
-    siteName: 'Krushna Dandge Portfolio',
-    title: 'Krushna Dandge - Full Stack Developer & AI/ML Enthusiast',
-    description: 'Portfolio of Krushna Dandge - Full Stack Developer specializing in React, Node.js, and AI/ML.',
+    siteName: 'Krushna Portfolio',
+    title: 'Krushna Portfolio | Full Stack Developer & AI/ML Enthusiast from India',
+    description: 'Krushna Portfolio - Full Stack Developer from India specializing in React, Node.js, and AI/ML.',
     images: [
       {
         url: 'https://krushnapersonalportfolio.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Krushna Dandge Portfolio'
+        alt: 'Krushna Portfolio'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Krushna Dandge - Full Stack Developer & AI/ML Enthusiast',
-    description: 'Portfolio of Krushna Dandge - Full Stack Developer specializing in React, Node.js, and AI/ML.',
+    title: 'Krushna Portfolio | Full Stack Developer & AI/ML Enthusiast',
+    description: 'Krushna Portfolio - Full Stack Developer from India specializing in React, Node.js, and AI/ML.',
     images: ['https://krushnapersonalportfolio.vercel.app/og-image.jpg']
   },
   robots: {
@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'i8U5kUKJ4-31oK_EMzN3zsncPk8xc3pxkCKbGI_tvlI',
+  },
+  alternates: {
+    canonical: 'https://krushnapersonalportfolio.vercel.app'
   }
 }
 
@@ -48,7 +51,13 @@ const structuredData = {
   "sameAs": [
     "https://www.linkedin.com/in/krushnadandge",
     "https://github.com/Krushna8080"
-  ]
+  ],
+  "jobTitle": "Full Stack Developer",
+  "nationality": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "knowsAbout": ["Web Development", "React", "Next.js", "AI/ML", "Node.js", "TypeScript", "Finance"]
 };
 
 export default function RootLayout({
@@ -63,6 +72,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon/favicon-16x16.png" />
         <meta name="google-site-verification" content="i8U5kUKJ4-31oK_EMzN3zsncPk8xc3pxkCKbGI_tvlI" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.placename" content="India" />
+        <link rel="alternate" hrefLang="en-in" href="https://krushnapersonalportfolio.vercel.app" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </head>
       <body>{children}</body>

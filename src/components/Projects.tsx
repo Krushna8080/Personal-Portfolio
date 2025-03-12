@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Code2, Bot, ShoppingCart } from 'lucide-react';
+import { Github, ExternalLink, Code2, Bot, ShoppingCart, Briefcase } from 'lucide-react';
 
 
 const Projects: React.FC = () => {
   
 
   const featuredProjects = [
+   
     {
       title: "WealthRock",
       description: "A comprehensive investment platform that helps users make informed decisions based on capital,risk and time horizan.",
@@ -50,7 +51,18 @@ const Projects: React.FC = () => {
         live: "https://freshmart-git-main-krushna8080s-projects.vercel.app/"
       },
       icon: <ShoppingCart className="w-6 h-6" />
-    }
+    },
+    {
+      title: "HireGenius",
+      description: "An intelligent recruitment platform leveraging smart resume processing and job-candidate matching to streamline the hiring process for both recruiters and job seekers.",
+      image: "/projects/hiregenius.png", 
+      tags: ["Next.js", "TypeScript", "Tailwind", "Prisma", "PostgreSQL"],
+      links: {
+        github: "https://github.com/Krushna8080/HireGenius",
+        live: "https://hire-genius-eta.vercel.app/"
+      },
+      icon: <Briefcase className="w-6 h-6" />
+    },
   ];
 
  
